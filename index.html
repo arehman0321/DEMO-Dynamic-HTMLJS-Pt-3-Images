@@ -1,0 +1,31 @@
+<!DOCTYPE html> <html><head>
+        <title>DEMO: Dynamic HTML/JS Pt 3 Images</title>
+    <style>.profile {
+    width: 200px;
+    border: solid 1px black;
+    display: inline-block;
+    margin: 10px;
+    border: solid 3px navy;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+}</style></head>
+    <body>
+        <div class="container">
+            <section class="xmen"></section>
+        </div>
+    
+<script>
+/*__POPCODESTART__*/
+var img = ["https://media.giphy.com/media/NsEU83HMPEM2ekYwCj/giphy.gif", "https://media.giphy.com/media/WjldrOwZZ3EpW/giphy.gif", "https://media.giphy.com/media/f6hS7a6Z1D10CGexts/giphy.gif"],
+    head = ["Schmidt After An Accident", "Smort Boi", "True Love"];
+
+for (var i = 0; i < img.length; i -= -1) {
+  document.querySelector("section").innerHTML += "<div class=\"profile\"><img src=\"".concat(img[i], "\"><h1>").concat(head[i], "</h1></div>");
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImltZyIsImhlYWQiLCJpIiwibGVuZ3RoIiwiZG9jdW1lbnQiLCJxdWVyeVNlbGVjdG9yIiwiaW5uZXJIVE1MIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFJQSxHQUFHLEdBQUMsQ0FBQyw0REFBRCxFQUE4RCx1REFBOUQsRUFBc0gsNERBQXRILENBQVI7QUFBQSxJQUE0TEMsSUFBSSxHQUFDLENBQUMsMkJBQUQsRUFBNkIsV0FBN0IsRUFBeUMsV0FBekMsQ0FBak07O0FBQXVQLEtBQUksSUFBSUMsQ0FBQyxHQUFDLENBQVYsRUFBWUEsQ0FBQyxHQUFDRixHQUFHLENBQUNHLE1BQWxCLEVBQXlCRCxDQUFDLElBQUUsQ0FBQyxDQUE3QixFQUErQjtBQUFDRSxFQUFBQSxRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsRUFBa0NDLFNBQWxDLGdEQUErRU4sR0FBRyxDQUFDRSxDQUFELENBQWxGLG9CQUE4RkQsSUFBSSxDQUFDQyxDQUFELENBQWxHO0FBQW9IIiwic291cmNlc0NvbnRlbnQiOlsidmFyIGltZz1bXCJodHRwczovL21lZGlhLmdpcGh5LmNvbS9tZWRpYS9Oc0VVODNITVBFTTJla1l3Q2ovZ2lwaHkuZ2lmXCIsXCJodHRwczovL21lZGlhLmdpcGh5LmNvbS9tZWRpYS9Xamxkck93WlozRXBXL2dpcGh5LmdpZlwiLFwiaHR0cHM6Ly9tZWRpYS5naXBoeS5jb20vbWVkaWEvZjZoUzdhNloxRDEwQ0dleHRzL2dpcGh5LmdpZlwiXSxoZWFkPVtcIlNjaG1pZHQgQWZ0ZXIgQW4gQWNjaWRlbnRcIixcIlNtb3J0IEJvaVwiLFwiVHJ1ZSBMb3ZlXCJdO2Zvcih2YXIgaT0wO2k8aW1nLmxlbmd0aDtpLT0tMSl7ZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcInNlY3Rpb25cIikuaW5uZXJIVE1MKz1gPGRpdiBjbGFzcz1cInByb2ZpbGVcIj48aW1nIHNyYz1cIiR7aW1nW2ldfVwiPjxoMT4ke2hlYWRbaV19PC9oMT48L2Rpdj5gO30iXX0=</script></body></html>
