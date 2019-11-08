@@ -1,0 +1,15 @@
+.profile {
+    width: 200px;
+    border: solid 1px black;
+    display: inline-block;
+    margin: 10px;
+    border: solid 3px navy;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 200px;
+}
